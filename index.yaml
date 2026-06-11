@@ -1,0 +1,136 @@
+apiVersion: v1
+entries:
+  configure-pipeline:
+  - apiVersion: v2
+    appVersion: 0.5.8
+    created: "2026-06-11T00:58:47.26119589Z"
+    dependencies:
+    - condition: pipelineStorage.deployMinio
+      name: minio
+      repository: https://rh-ai-quickstart.github.io/ai-architecture-charts
+      version: 0.5.5
+    description: A Helm chart for Kubernetes
+    digest: c0470de2f11eb33451e1cf118c8e3de65a017a7e1afa8eca68edbfe75d963cac
+    name: configure-pipeline
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/configure-pipeline-0.5.8.tgz
+    version: 0.5.8
+  ingestion-pipeline:
+  - apiVersion: v2
+    appVersion: 0.7.4
+    created: "2026-06-11T00:58:47.261714116Z"
+    description: A Helm chart for Kubernetes
+    digest: 57034f89a776f3dc9a0bc65181b353ed4a36b4d01f4ae1786255ca6844bcc2ac
+    name: ingestion-pipeline
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/ingestion-pipeline-0.7.4.tgz
+    version: 0.7.4
+  llama-stack:
+  - apiVersion: v2
+    appVersion: 0.8.6
+    created: "2026-06-11T00:58:47.262334445Z"
+    description: A Helm chart for Kubernetes
+    digest: 3c422f83956d96070dada716870415f663d36f80efd28fe61085b89858dd2717
+    name: llama-stack
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/llama-stack-0.8.6.tgz
+    version: 0.8.6
+  llm-service:
+  - apiVersion: v2
+    appVersion: 0.5.10
+    created: "2026-06-11T00:58:47.263248703Z"
+    description: A Helm chart for Kubernetes
+    digest: 4bb327e6096a3714c71a47cb6dd942f6025d5ee3567eaead8977cd262a0ffa4e
+    name: llm-service
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/llm-service-0.5.10.tgz
+    version: 0.5.10
+  mcp-servers:
+  - apiVersion: v2
+    appVersion: 0.5.17
+    created: "2026-06-11T00:58:47.263695321Z"
+    description: A Helm chart for deploying MCP (Model Context Protocol) servers using
+      the Toolhive operator
+    digest: f0a029721d6feb0ecf232ba87d65a193a03eecaaa4a4c8f9e760727d3511434a
+    keywords:
+    - mcp
+    - toolhive
+    - model-context-protocol
+    name: mcp-servers
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/mcp-servers-0.5.17.tgz
+    version: 0.5.17
+  minio:
+  - apiVersion: v2
+    appVersion: 0.5.5
+    created: "2026-06-11T00:58:47.264062982Z"
+    description: A Helm chart for Kubernetes
+    digest: 758841706edbbbc24a0c32f0e8c51b2093506a1cb274ee6c3acfc87b16bd6aec
+    name: minio
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/minio-0.5.5.tgz
+    version: 0.5.5
+  model-registry:
+  - apiVersion: v2
+    appVersion: 0.2.1
+    created: "2026-06-11T00:58:47.265177009Z"
+    dependencies:
+    - condition: postgres.enabled
+      name: pgvector
+      repository: file://../../pgvector/helm
+      version: '>=0.1.0'
+    description: A Helm chart for OpenDataHub Model Registry on Kubernetes/OpenShift
+    digest: a9cce17587468e93706ef503122466684ff8c5925f2bed22244d9755eba6f34f
+    home: https://github.com/rh-ai-quickstart/ai-architecture-charts
+    keywords:
+    - model-registry
+    - openshift-ai
+    - openshift
+    maintainers:
+    - name: Red Hat AI Quickstart Team
+    name: model-registry
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/model-registry-0.2.1.tgz
+    version: 0.2.1
+  oracle-db:
+  - annotations:
+      category: Database
+      license: Oracle Free Use Terms and Conditions
+    apiVersion: v2
+    appVersion: 0.5.5
+    created: "2026-06-11T00:58:47.266097181Z"
+    description: A Helm chart for Oracle 23ai Database with TPC-DS data loading
+    digest: 5bd40a673fc983ae542aa368346e20e8fb6f66fd51ee70c69e645ff17c05009b
+    keywords:
+    - oracle
+    - database
+    - ai
+    - tpc-ds
+    - benchmark
+    maintainers:
+    - email: support@oracle.com
+      name: Oracle 23ai Team
+    name: oracle-db
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/oracle-db-0.5.5.tgz
+    version: 0.5.5
+  pgvector:
+  - apiVersion: v2
+    appVersion: 0.5.5
+    created: "2026-06-11T00:58:47.266472713Z"
+    description: A Helm chart for Kubernetes
+    digest: 7040f16622573c98988cbb8828189c76adb359077f449af7e037eead7089b77e
+    name: pgvector
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/pgvector-0.5.5.tgz
+    version: 0.5.5
+generated: "2026-06-11T00:58:47.260312568Z"
