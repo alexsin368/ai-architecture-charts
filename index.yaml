@@ -3,7 +3,7 @@ entries:
   configure-pipeline:
   - apiVersion: v2
     appVersion: 0.5.8
-    created: "2026-06-11T00:58:47.26119589Z"
+    created: "2026-06-11T21:51:13.247980263Z"
     dependencies:
     - condition: pipelineStorage.deployMinio
       name: minio
@@ -19,7 +19,7 @@ entries:
   ingestion-pipeline:
   - apiVersion: v2
     appVersion: 0.7.4
-    created: "2026-06-11T00:58:47.261714116Z"
+    created: "2026-06-11T21:51:13.248469105Z"
     description: A Helm chart for Kubernetes
     digest: 57034f89a776f3dc9a0bc65181b353ed4a36b4d01f4ae1786255ca6844bcc2ac
     name: ingestion-pipeline
@@ -30,7 +30,7 @@ entries:
   llama-stack:
   - apiVersion: v2
     appVersion: 0.8.6
-    created: "2026-06-11T00:58:47.262334445Z"
+    created: "2026-06-11T21:51:13.249125079Z"
     description: A Helm chart for Kubernetes
     digest: 3c422f83956d96070dada716870415f663d36f80efd28fe61085b89858dd2717
     name: llama-stack
@@ -40,8 +40,18 @@ entries:
     version: 0.8.6
   llm-service:
   - apiVersion: v2
+    appVersion: 0.5.11
+    created: "2026-06-11T21:51:13.251846603Z"
+    description: A Helm chart for Kubernetes
+    digest: efa0dc7b6a41d2f135553fa2c4f69ee3262ef200802bac7c2b6bea06377d6c66
+    name: llm-service
+    type: application
+    urls:
+    - https://alexsin368.github.io/ai-architecture-charts/llm-service-0.5.11.tgz
+    version: 0.5.11
+  - apiVersion: v2
     appVersion: 0.5.10
-    created: "2026-06-11T00:58:47.263248703Z"
+    created: "2026-06-11T21:51:13.250331309Z"
     description: A Helm chart for Kubernetes
     digest: 4bb327e6096a3714c71a47cb6dd942f6025d5ee3567eaead8977cd262a0ffa4e
     name: llm-service
@@ -52,7 +62,7 @@ entries:
   mcp-servers:
   - apiVersion: v2
     appVersion: 0.5.17
-    created: "2026-06-11T00:58:47.263695321Z"
+    created: "2026-06-11T21:51:13.252365892Z"
     description: A Helm chart for deploying MCP (Model Context Protocol) servers using
       the Toolhive operator
     digest: f0a029721d6feb0ecf232ba87d65a193a03eecaaa4a4c8f9e760727d3511434a
@@ -68,7 +78,7 @@ entries:
   minio:
   - apiVersion: v2
     appVersion: 0.5.5
-    created: "2026-06-11T00:58:47.264062982Z"
+    created: "2026-06-11T21:51:13.252775777Z"
     description: A Helm chart for Kubernetes
     digest: 758841706edbbbc24a0c32f0e8c51b2093506a1cb274ee6c3acfc87b16bd6aec
     name: minio
@@ -79,7 +89,7 @@ entries:
   model-registry:
   - apiVersion: v2
     appVersion: 0.2.1
-    created: "2026-06-11T00:58:47.265177009Z"
+    created: "2026-06-11T21:51:13.253512391Z"
     dependencies:
     - condition: postgres.enabled
       name: pgvector
@@ -105,7 +115,7 @@ entries:
       license: Oracle Free Use Terms and Conditions
     apiVersion: v2
     appVersion: 0.5.5
-    created: "2026-06-11T00:58:47.266097181Z"
+    created: "2026-06-11T21:51:13.254184916Z"
     description: A Helm chart for Oracle 23ai Database with TPC-DS data loading
     digest: 5bd40a673fc983ae542aa368346e20e8fb6f66fd51ee70c69e645ff17c05009b
     keywords:
@@ -125,7 +135,7 @@ entries:
   pgvector:
   - apiVersion: v2
     appVersion: 0.5.5
-    created: "2026-06-11T00:58:47.266472713Z"
+    created: "2026-06-11T21:51:13.254558112Z"
     description: A Helm chart for Kubernetes
     digest: 7040f16622573c98988cbb8828189c76adb359077f449af7e037eead7089b77e
     name: pgvector
@@ -133,4 +143,4 @@ entries:
     urls:
     - https://alexsin368.github.io/ai-architecture-charts/pgvector-0.5.5.tgz
     version: 0.5.5
-generated: "2026-06-11T00:58:47.260312568Z"
+generated: "2026-06-11T21:51:13.247036813Z"
